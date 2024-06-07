@@ -1,10 +1,11 @@
-import contactLogo from '../../assets/dashboard/contact.png';
-import homeLogo from '../../assets/dashboard/home.png';
-import groupsLogo from '../../assets/dashboard/groups.png';
-import todoLogo from '../../assets/dashboard/todo.png';
 import React from 'react';
-import { VIEW } from '../../domains/router/types';
+
+import contactLogo from '../../assets/dashboard/contact.png';
+import groupsLogo from '../../assets/dashboard/groups.png';
+import homeLogo from '../../assets/dashboard/home.png';
+import todoLogo from '../../assets/dashboard/todo.png';
 import { User } from '../../domains/auth/types';
+import { VIEW } from '../../domains/router/types';
 
 interface NavbarOptions {
     user: User;

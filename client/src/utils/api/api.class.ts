@@ -1,4 +1,5 @@
 import axios from 'axios';
+
 import { User } from '../../domains/auth/types';
 import { Todo } from '../../domains/projects/types';
 
