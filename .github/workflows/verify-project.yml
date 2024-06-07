@@ -16,14 +16,20 @@ jobs:
         name: Install All Packages Front
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
+
+            - name: Set Node.js 20.x
+              uses: actions/setup-node@v4
+              with:
+                node-version: 20.12.2
+
             - name: install all packages
               uses: borales/actions-yarn@v4
               with:
                   cmd: install
                   dir: 'client'
             - name: Cache node modules
-              uses: actions/cache@v3
+              uses: actions/cache@v4
               with:
                   path: client/node_modules
                   key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
@@ -37,9 +43,15 @@ jobs:
         name: Code linting front
         steps:
             - name: Checkout Repository
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
+
+            - name: Set Node.js 20.x
+              uses: actions/setup-node@v4
+              with:
+                node-version: 20.12.2
+
             - name: Cache node modules
-              uses: actions/cache@v3
+              uses: actions/cache@v4
               with:
                   path: client/node_modules
                   key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
@@ -58,9 +70,15 @@ jobs:
         name: Typings front
         steps:
             - name: Checkout Repository
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
+
+            - name: Set Node.js 20.x
+              uses: actions/setup-node@v4
+              with:
+                node-version: 20.12.2
+
             - name: Cache node modules
-              uses: actions/cache@v3
+              uses: actions/cache@v4
               with:
                   path: client/node_modules
                   key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
@@ -79,9 +97,15 @@ jobs:
         name: Building front
         steps:
             - name: Checkout Repository
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
+
+            - name: Set Node.js 20.x
+              uses: actions/setup-node@v4
+              with:
+                node-version: 20.12.2
+
             - name: Cache node modules
-              uses: actions/cache@v3
+              uses: actions/cache@v4
               with:
                   path: client/node_modules
                   key: ${{ runner.os }}-node-modules-${{ hashFiles('**/yarn.lock') }}
