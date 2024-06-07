@@ -1,4 +1,4 @@
-name: Testing the application
+name: Testing the front
 on:
     push:
         branches-ignore:
