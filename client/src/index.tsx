@@ -10,9 +10,9 @@ const domNode = document.getElementById('root');
 const root = createRoot(domNode!);
 
 root.render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
-    </React.StrictMode>,
+	<React.StrictMode>
+		<BrowserRouter>
+			<App />
+		</BrowserRouter>
+	</React.StrictMode>
 );

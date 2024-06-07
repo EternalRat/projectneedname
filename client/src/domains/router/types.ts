@@ -1,7 +1,7 @@
 export enum VIEW {
-    PROFILE,
-    DASHBOARD,
-    GROUPS,
-    TODOS,
-    CONTACT,
+	PROFILE,
+	DASHBOARD,
+	GROUPS,
+	TODOS,
+	CONTACT,
 }
